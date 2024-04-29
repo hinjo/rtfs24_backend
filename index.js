@@ -9,7 +9,7 @@ app.get("/", (_request, response) => {
 })
 
 app.get("/hej", (_request, response) => {
-  response.send("hej på dig")
+  response.send("hej på dig!!!!!")
   // response.send("<html><head></head><body>Hello there</body></html>")
 })
 
