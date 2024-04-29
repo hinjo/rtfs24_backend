@@ -1,10 +1,15 @@
 const express = require("express")
 
-const app = express(),
-  port = process.env.PORT || 3000
+const app = express()
+const port = process.env.PORT || 3000
 
 app.get("/", (_request, response) => {
   response.send({ hello: "World" })
+  // response.send("<html><head></head><body>Hello there</body></html>")
+})
+
+app.get("/hej", (_request, response) => {
+  response.send("hej på dig")
   // response.send("<html><head></head><body>Hello there</body></html>")
 })
 
