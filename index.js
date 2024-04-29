@@ -13,6 +13,11 @@ app.get("/hej", (_request, response) => {
   // response.send("<html><head></head><body>Hello there</body></html>")
 })
 
+app.get("/health", (_request, response) => {
+  response.status(200).send("OK")
+  // response.send("<html><head></head><body>Hello there</body></html>")
+})
+
 app.listen(port, () => {
   console.log(`Redo på http://localhost:${port}/`)
 })
